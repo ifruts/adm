@@ -1,9 +1,9 @@
 var data = 
-'CNPJ› 37.085.118/0001-70<br>'+
-'FONE› (83) 9.8661-2160<br>' +
-'END.› CEASA, Campina Grande - Bloco B, Box 21';
+'CNPJ› 00.000.000/0000-00<br>'+
+'FONE› (83) 9.0000-0000<br>' +
+'END.› CEASA, Campina Grande - Bloco X, Box Y';
 
-var description = 'Serviço de Cupom Fiscal para administradores da loja física Brasileiros Hortifruti.';
-var title = 'Brasileiros Hortifruti - ADM';
+var description = 'Serviço de Cupom Fiscal para administradores de iFruts - Seu Delivery Saudável.';
+var title = 'iFruts - ADM';
 
-var website = 'hortifrutibrasileiros';
+var website = 'ifruts';
