@@ -131,20 +131,29 @@
         </div>
     </div>
 
-    <button id="limparCookies">Limpar cookies</button>
-    <script>
-    $(document).ready(function () {
-      $("#limparCookies").click(function () {
-        // Limpar cookies
-        document.cookie.split(";").forEach(function(c) {
-          document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
+    <button id="limparCache">Limpar CACHE</button>
+  <script>
+    $(document).ready(function() {
+      // Função para desativar o cache
+      function limparCache() {
+        $.ajaxSetup({
+          cache: false
         });
+        alert('Cache limpo!'); // Apenas para exibir uma mensagem, você pode remover isso se preferir
+      }
 
-        // Recarregar a página
-        location.href = location.href;
+      // Função para recarregar a página
+      function recarregarPagina() {
+        location.reload(true); // O argumento true força uma recarga do cache
+      }
+
+      // Associar a função ao clique do botão
+      $('#limparCacheBtn').click(function() {
+        limparCache();
+        recarregarPagina();
       });
     });
-      </script>
+  </script>
 
     <script src="list.js"></script>
     <script src="https://arthiagosoubra.github.io/appSharePrint/files/script/main.js"></script>
