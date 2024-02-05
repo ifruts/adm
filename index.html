@@ -133,6 +133,7 @@
 
     <button id="limparCookies">Limpar cookies</button>
     <script>
+    $(document).ready(function () {
       $("#limparCookies").click(function () {
         // Limpar cookies
         document.cookie.split(";").forEach(function(c) {
@@ -140,7 +141,7 @@
         });
 
         // Recarregar a página
-        location.reload(true);
+        location.href = location.href;
       });
     });
       </script>
