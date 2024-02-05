@@ -131,28 +131,26 @@
         </div>
     </div>
 
-    <button id="limparCacheBtn">Limpar CACHE MEU DEUS</button>
+    <button id="clearCacheBtn">AJUDA DEUS</button>
   <script>
-    $(document).ready(function() {
-      // Função para desativar o cache
-      function limparCache() {
-        $.ajaxSetup({
-          cache: false
-        });
-        alert('Cache limpo!'); // Apenas para exibir uma mensagem, você pode remover isso se preferir
-      }
-
-      // Função para recarregar a página
-      function recarregarPagina() {
-        location.reload(true); // O argumento true força uma recarga do cache
-      }
-
-      // Associar a função ao clique do botão
-      $('#limparCacheBtn').click(function() {
-        limparCache();
-        recarregarPagina();
+  document.getElementById('clearCacheBtn').addEventListener('click', function() {
+    if ('serviceWorker' in navigator && navigator.serviceWorker.controller) {
+      // Registrando um novo Service Worker para forçar a ativação
+      navigator.serviceWorker.getRegistration().then(function(registration) {
+        if (registration) {
+          registration.unregister().then(function() {
+            // Limpar o cache manualmente após desregistrar o Service Worker
+            caches.keys().then(function(cacheNames) {
+              cacheNames.forEach(function(cacheName) {
+                caches.delete(cacheName);
+              });
+              alert('Cache limpo. Recarregue a página para ver as alterações.');
+            });
+          });
+        }
       });
-    });
+    }
+  });
   </script>
 
     <script src="list.js"></script>
