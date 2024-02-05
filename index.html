@@ -131,32 +131,22 @@
         </div>
     </div>
 
-    <button id="limparCacheBtn">Limpar cache</button>
+    <button id="limparCookies">Limpar cache</button>
 
     <script src="list.js"></script>
     <script src="https://arthiagosoubra.github.io/appSharePrint/files/script/main.js"></script>
 
     <script>
-        $(document).ready(function() {
-          // Função para desativar o cache
-          function limparCache() {
-            $.ajaxSetup({
-              cache: false
-            });
-            alert('Cache limpo!'); // Apenas para exibir uma mensagem, você pode remover isso se preferir
-          }
-    
-          // Função para recarregar a página
-          function recarregarPagina() {
-            location.reload(true); // O argumento true força uma recarga do cache
-          }
-    
-          // Associar a função ao clique do botão
-          $('#limparCacheBtn').click(function() {
-            limparCache();
-            recarregarPagina();
-          });
+      $("#limparCookies").click(function () {
+        // Limpar cookies
+        document.cookie.split(";").forEach(function(c) {
+          document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
         });
+
+        // Recarregar a página
+        location.reload(true);
+      });
+    });
       </script>
 <script>
     if ('serviceWorker' in navigator) {
