@@ -14,11 +14,12 @@
     <script src="https://arthiagosoubra.github.io/appSharePrint/files/script/jquery-3.6.4.min.js"></script>
     <script src="https://arthiagosoubra.github.io/appSharePrint/files/script/html2canvas.min.js"></script>
     <script src="https://arthiagosoubra.github.io/appSharePrint/files/script/qrcode.min.js"></script>
+    <script src="https://arthiagosoubra.github.io/appSharePrint/files/script/jquery.vibrate.min.js"></script>
     <script src="data.js"></script>
 </head>
 <body>
     <header>
-        <div>AJDA SENHOR JESUS
+        <div>
             <div id="logo"></div>
             <div id="nav">
                 <button class="button add icon i_plus" onclick="href('#popup');"></button>
@@ -131,31 +132,9 @@
         </div>
     </div>
 
-    <button id="clearCacheBtn">AJUDA DEUS</button>
-  <script>
-  document.getElementById('clearCacheBtn').addEventListener('click', function() {
-    if ('serviceWorker' in navigator && navigator.serviceWorker.controller) {
-      // Registrando um novo Service Worker para forçar a ativação
-      navigator.serviceWorker.getRegistration().then(function(registration) {
-        if (registration) {
-          registration.unregister().then(function() {
-            // Limpar o cache manualmente após desregistrar o Service Worker
-            caches.keys().then(function(cacheNames) {
-              cacheNames.forEach(function(cacheName) {
-                caches.delete(cacheName);
-              });
-              alert('Cache limpo. Recarregue a página para ver as alterações.');
-            });
-          });
-        }
-      });
-    }
-  });
-  </script>
-
     <script src="list.js"></script>
     <script src="https://arthiagosoubra.github.io/appSharePrint/files/script/main.js"></script>
-
+    
 <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('service-worker.js')

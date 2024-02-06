@@ -16,6 +16,7 @@ self.addEventListener('install', (event) => {
         'https://arthiagosoubra.github.io/appSharePrint/files/script/jquery-3.6.4.min.js',
         'https://arthiagosoubra.github.io/appSharePrint/files/script/html2canvas.min.js',
         'https://arthiagosoubra.github.io/appSharePrint/files/script/qrcode.min.js',
+        'https://arthiagosoubra.github.io/appSharePrint/files/script/jquery.vibrate.min.js',
         'https://arthiagosoubra.github.io/appSharePrint/files/script/main.js',
         'https://arthiagosoubra.github.io/appSharePrint/files/font/BHicons/BHicons.woff2',
         'https://arthiagosoubra.github.io/appSharePrint/files/font/BHicons/BHicons.ttf',
