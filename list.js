@@ -218,3 +218,15 @@ var items = [
     { discr: 'Ovos 15und vermelhos', pUnit: '13.00', medida: 'cx'},
     { discr: 'Ovos 30und vermelhos', pUnit: '23.00', medida: 'cx'}
 ]
+
+
+
+
+
+
+
+
+
+
+
+//
