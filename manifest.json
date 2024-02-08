@@ -35,7 +35,7 @@
       "name": "Baixar App driver",
       "short_name": "App driver",
       "description": "Aplicativo de impressão móvel",
-      "url": "driver.html",
+      "url": "https://arthiagosoubra.github.io/appSharePrint/files/driver.html",
       "icons": [{ "src": "https://arthiagosoubra.github.io/appSharePrint/files/image/driver_icon.png", "sizes": "192x192" }]
     }
   ],
