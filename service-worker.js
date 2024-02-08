@@ -1,32 +1,29 @@
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open('my-cache').then((cache) => {
+    caches.open('the-cache').then((cache) => {
       return cache.addAll([
         'index.html',
-        'icon.svg',
-        'icon_dark.svg',
-        'data.js',
         'list.js',
-        'service-worker.js',
-        'manifest.json',
-        'https://arthiagosoubra.github.io/appSharePrint/files/style/main.css',
-        'https://arthiagosoubra.github.io/appSharePrint/files/style/icons.css',
-        'https://arthiagosoubra.github.io/appSharePrint/files/style/font.css',
-        'https://arthiagosoubra.github.io/appSharePrint/files/style/themes.css',
-        'https://arthiagosoubra.github.io/appSharePrint/files/script/jquery-3.6.4.min.js',
-        'https://arthiagosoubra.github.io/appSharePrint/files/script/html2canvas.min.js',
-        'https://arthiagosoubra.github.io/appSharePrint/files/script/qrcode.min.js',
-        'https://arthiagosoubra.github.io/appSharePrint/files/script/jquery.vibrate.min.js',
-        'https://arthiagosoubra.github.io/appSharePrint/files/script/main.js',
-        'https://arthiagosoubra.github.io/appSharePrint/files/font/BHicons/BHicons.woff2',
-        'https://arthiagosoubra.github.io/appSharePrint/files/font/BHicons/BHicons.ttf',
-        'https://arthiagosoubra.github.io/appSharePrint/files/font/BHicons/BHicons.svg',
-        'https://arthiagosoubra.github.io/appSharePrint/files/font/UbuntuMono/1.woff2',
-        'https://arthiagosoubra.github.io/appSharePrint/files/font/UbuntuMono/2.woff2',
-        'https://arthiagosoubra.github.io/appSharePrint/files/font/UbuntuMono/3.woff2',
-        'https://arthiagosoubra.github.io/appSharePrint/files/font/UbuntuMono/4.woff2',
-        'https://arthiagosoubra.github.io/appSharePrint/files/font/UbuntuMono/5.woff2',
-        'https://arthiagosoubra.github.io/appSharePrint/files/font/UbuntuMono/6.woff2'
+
+        'https://arthiagosoubra.github.io/appSharePrint/clients/ifruts/icon.svg',
+        'https://arthiagosoubra.github.io/appSharePrint/clients/ifruts/icon_dark.svg',
+        'https://arthiagosoubra.github.io/appSharePrint/clients/ifruts/data.js',
+
+        'https://arthiagosoubra.github.io/appSharePrint/files/styles.css',
+        'https://arthiagosoubra.github.io/appSharePrint/files/jquery-3.6.4.min.js',
+        'https://arthiagosoubra.github.io/appSharePrint/files/dependences.js',
+        'https://arthiagosoubra.github.io/appSharePrint/files/scripts.js',
+
+        'https://arthiagosoubra.github.io/appSharePrint/files/fonts/BHicons/BHicons.woff2',
+        'https://arthiagosoubra.github.io/appSharePrint/files/fonts/BHicons/BHicons.ttf',
+        'https://arthiagosoubra.github.io/appSharePrint/files/fonts/BHicons/BHicons.svg',
+
+        'https://arthiagosoubra.github.io/appSharePrint/files/fonts/UbuntuMono/1.woff2',
+        'https://arthiagosoubra.github.io/appSharePrint/files/fonts/UbuntuMono/2.woff2',
+        'https://arthiagosoubra.github.io/appSharePrint/files/fonts/UbuntuMono/3.woff2',
+        'https://arthiagosoubra.github.io/appSharePrint/files/fonts/UbuntuMono/4.woff2',
+        'https://arthiagosoubra.github.io/appSharePrint/files/fonts/UbuntuMono/5.woff2',
+        'https://arthiagosoubra.github.io/appSharePrint/files/fonts/UbuntuMono/6.woff2'
       ]);
     })
   );
