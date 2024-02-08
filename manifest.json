@@ -28,14 +28,14 @@
       "name": "Editar lista de itens",
       "short_name": "Editar lista",
       "description": "Editar lista de items da loja",
-      "url": "https://arthiagosoubra.github.io/appSharePrint/clients/ifruts/list.html",
+      "url": "list.html",
       "icons": [{ "src": "https://arthiagosoubra.github.io/appSharePrint/files/image/list_icon.png", "sizes": "192x192" }]
     },
     {
       "name": "Baixar App driver",
       "short_name": "App driver",
       "description": "Aplicativo de impressão móvel",
-      "url": "https://arthiagosoubra.github.io/appSharePrint/files/driver.html",
+      "url": "driver.html",
       "icons": [{ "src": "https://arthiagosoubra.github.io/appSharePrint/files/image/driver_icon.png", "sizes": "192x192" }]
     }
   ],
