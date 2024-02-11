@@ -3,7 +3,7 @@
   "short_name": "iFruts ADM",
   "id": "index.html",
   "start_url": "index.html",
-  "description": "Apliactivo para serviço de Cupom Fiscal para ADM da loja iFruts - Seu Delivery Saudável.",
+  "description": "Aplicativo para serviço de Cupom Fiscal para ADM da loja iFruts - Seu Delivery Saudável.",
   "icons": [
     {
       "src": "https://arthiagosoubra.github.io/appSharePrint/clients/ifruts/icon.svg",
