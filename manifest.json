@@ -1,6 +1,8 @@
 {
-  "short_name": "iFruts ADM",
   "name": "iFruts - Seu Delivery Saudável ADM",
+  "short_name": "iFruts ADM",
+  "id": "index.html",
+  "start_url": "index.html",
   "description": "Apliactivo para serviço de Cupom Fiscal para ADM da loja iFruts - Seu Delivery Saudável.",
   "icons": [
     {
@@ -19,7 +21,6 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "index.html",
   "background_color": "#ffffff",
   "display": "standalone",
   "theme_color": "#ffffff",
