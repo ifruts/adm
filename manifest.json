@@ -29,54 +29,54 @@
       "short_name": "Editar lista",
       "description": "Editar lista de items da loja",
       "url": "list.html",
-      "icons": [{ "src": "https://arthiagosoubra.github.io/appSharePrint/files/image/list_icon.png", "sizes": "192x192" }]
+      "icons": [{ "src": "list_icon.png", "sizes": "192x192" }]
     },
     {
       "name": "Baixar App driver",
       "short_name": "App driver",
       "description": "Aplicativo de impressão móvel",
       "url": "driver.html",
-      "icons": [{ "src": "https://arthiagosoubra.github.io/appSharePrint/files/image/driver_icon.png", "sizes": "192x192" }]
+      "icons": [{ "src": "driver_icon.png", "sizes": "192x192" }]
     }
   ],
   "screenshots": [
     {
-      "src": "https://arthiagosoubra.github.io/appSharePrint/files/image/screenshot-desktop.png",
+      "src": "https://arthiagosoubra.github.io/appSharePrint/files/imgs/screenshot-desktop.png",
       "sizes": "1280x800",
       "type": "image/png",
       "platform": "web",
       "form_factor": "wide"
     },
     {
-      "src": "https://arthiagosoubra.github.io/appSharePrint/files/image/screenshot-mobile-01.png",
+      "src": "https://arthiagosoubra.github.io/appSharePrint/files/imgs/screenshot-mobile-01.png",
       "sizes": "750x1334",
       "type": "image/png",
       "platform": "web",
       "form_factor": "narrow"
     },
     {
-      "src": "https://arthiagosoubra.github.io/appSharePrint/files/image/screenshot-mobile-02.png",
+      "src": "https://arthiagosoubra.github.io/appSharePrint/files/imgs/screenshot-mobile-02.png",
       "sizes": "750x1334",
       "type": "image/png",
       "platform": "web",
       "form_factor": "narrow"
     },
     {
-      "src": "https://arthiagosoubra.github.io/appSharePrint/files/image/screenshot-mobile-03.png",
+      "src": "https://arthiagosoubra.github.io/appSharePrint/files/imgs/screenshot-mobile-03.png",
       "sizes": "750x1334",
       "type": "image/png",
       "platform": "web",
       "form_factor": "narrow"
     },
     {
-      "src": "https://arthiagosoubra.github.io/appSharePrint/files/image/screenshot-mobile-04.png",
+      "src": "https://arthiagosoubra.github.io/appSharePrint/files/imgs/screenshot-mobile-04.png",
       "sizes": "750x1334",
       "type": "image/png",
       "platform": "web",
       "form_factor": "narrow"
     },
     {
-      "src": "https://arthiagosoubra.github.io/appSharePrint/files/image/screenshot-mobile-05.png",
+      "src": "https://arthiagosoubra.github.io/appSharePrint/files/imgs/screenshot-mobile-05.png",
       "sizes": "750x1334",
       "type": "image/png",
       "platform": "web",
